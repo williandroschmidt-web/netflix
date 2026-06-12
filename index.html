@@ -3,85 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1ª Série</title>
+    <title>Site Moderno & Profissional</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        /* --- RESET E VARIÁVEIS --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        :root {
-            --bg-principal: #0b0f19;
-            --bg-card: #131a2c;
-            --texto-principal: #ffffff;
-            --texto-secundario: #94a3b8;
-            --cor-accent: #6366f1; /* Azul/Roxo Moderno */
-            --cor-hover: #4f46e5;
-        }
+    <header>
+        <div class="logo">Nexus<span>.</span></div>
+        
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
 
-        body {
-            background-color: var(--bg-principal);
-            color: var(--texto-principal);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#features">Recursos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+            <a href="#" class="btn-contato mobile-only">Começar Agora</a>
+        </nav>
+        
+        <a href="#" class="btn-contato desktop-only">Começar Agora</a>
+    </header>
 
-        /* --- NAVBAR --- */
-        header {
-            width: 100%;
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background: rgba(11, 15, 25, 0.8);
-            backdrop-filter: blur(12px); /* Efeito vidro fosco chic */
-            z-index: 1000;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
+    <section class="hero" id="home">
+        <h1>Construa o futuro da sua presença <span>digital hoje</span></h1>
+        <p>Criamos soluções de alta performance, com design minimalista e velocidade extrema para destacar seu negócio.</p>
+        <a href="#features" class="btn-contato btn-large">Conhecer Recursos</a>
+    </section>
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: -1px;
-        }
-
-        .logo span {
-            color: var(--cor-accent);
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
-
-        nav a {
-            color: var(--texto-secundario);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--texto-principal);
-        }
-
-        .btn-contato {
-            background: var(--cor-accent);
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: background 0.3s, transform 0.2s;
-        }
+    <section class="features" id="features">
+        <div class="section-title">
